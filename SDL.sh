@@ -1,10 +1,10 @@
 #!/bin/bash
 
 
-        echo "=====timestamps before listing====="
-        stat -c "  Access: %x" "$1"
-        stat -c "  Modify: %y" "$1"
-        echo ""
+echo "=====timestamps before listing====="
+stat -c "  Access: %x" "$1"
+stat -c "  Modify: %y" "$1"
+echo ""
 
 stealth_ls(){
 	local dir=${1:-.}
